@@ -1,37 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌊 Protego.ai on DuckChain  
+Revolutionary Invoice Financing Platform Powered by DuckChain’s High-Speed Blockchain  
 
-## Getting Started
+DuckChain Solidity License  
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Overview  
+Protego.ai transforms traditional invoice financing by leveraging DuckChain’s near-instant finality and advanced DeFi protocols.  
+Our platform enables businesses to tokenize invoices as NFTs and allows investors to earn yield by funding working capital needs.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Why DuckChain?  
+- **Near-Instant Finality**: Transactions confirmed in seconds  
+- **Parallel Execution**: Optimized performance with scalable throughput  
+- **Native DeFi Support**: Built for liquidity and yield protocols  
+- **EVM Compatibility**: Seamless smart contract deployment  
+- **High Capacity**: Supports multiple simultaneous investors  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🏗️ Architecture  
 
-To learn more about Next.js, take a look at the following resources:
+### Token Standards Implementation  
+| Standard | Usage | Contract |  
+|----------|-------|----------|  
+| **ERC-721** | Unique Invoice NFTs | ProtegoInvoiceNFT |  
+| **ERC-4626** | Yield-Bearing Vaults | ProtegoYieldVault |  
+| **ERC-1155** | Multi-Invoice Notes | ProtegoMultiInvoiceNotes |  
+| **ERC-20** | TON Token | MockERC20 (testnet) |  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Protego_duck
+### Core Components  
+📦 Protego.ai Ecosystem  
