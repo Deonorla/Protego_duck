@@ -32,3 +32,20 @@ Our platform enables businesses to tokenize invoices as NFTs and allows investor
 
 ### Core Components  
 📦 Protego.ai Ecosystem  
+
+
+---
+
+## 🛠️ Quick Start  
+
+### Prerequisites  
+- Node.js: >= 16.0.0  
+- npm: >= 8.0.0  
+- Git: Latest version  
+
+### 1. Clone & Install  
+```bash
+git clone https://github.com/protego-duck.git
+cd duckchain-contracts
+chmod +x build.sh
+
