@@ -1,5 +1,16 @@
 // src/app/api/sei-mcp/social-monitor/route.ts
 import { NextRequest, NextResponse } from 'next/server';
+import { SocialMonitor } from '../../../../services/socialMonitor';
+
+// Get global social monitor instance
+let socialMonitor: SocialMonitor;
+
+if (typeof globalThis !== 'undefined') {
+  if (!(globalThis as any).socialMonitorInstance) {
+    (globalThis as any).socialMonitorInstance = new SocialMonitor();
+  }
+  socialMonitor = (globalThis as any).socialMonitorInstance;
+}
 
 export async function POST(request: NextRequest) {
   try {

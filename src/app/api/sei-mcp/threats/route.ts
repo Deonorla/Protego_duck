@@ -5,11 +5,13 @@ import { SocialMonitor } from '../../../../services/socialMonitor';
 // Global instance to maintain state across requests
 let socialMonitor: SocialMonitor;
 
+// Initialize global instance
 if (typeof globalThis !== 'undefined') {
-  if (!globalThis.socialMonitorInstance) {
-    globalThis.socialMonitorInstance = new SocialMonitor();
+  if (!(globalThis as any).socialMonitorInstance) {
+    (globalThis as any).socialMonitorInstance = new SocialMonitor();
+    console.log('Social monitor instance created');
   }
-  socialMonitor = globalThis.socialMonitorInstance;
+  socialMonitor = (globalThis as any).socialMonitorInstance;
 }
 
 export async function GET(request: NextRequest) {
